@@ -1,0 +1,75 @@
+# Objects.hpp
+!Objects.cpp Objects.hpp cctype cerrno clocale cmath cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception initializer_list ios iosfwd iostream istream limits limits.h locale.h math.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error type_traits typeinfo utility vector wchar.h wctype.h #<#>
+!Objects.hpp cctype cerrno clocale cmath cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception initializer_list ios iosfwd iostream istream limits limits.h locale.h math.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error type_traits typeinfo utility vector wchar.h wctype.h #<#>
+!main.cpp Objects.hpp cctype cerrno clocale cmath cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception initializer_list ios iosfwd iostream istream limits limits.h locale.h math.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error type_traits typeinfo utility vector wchar.h wctype.h #<#>
+IntersectionError _type_ #<Objects.hpp>
+Object _type_ #<Objects.hpp>
+Point _type_ #<Objects.hpp>
+Point() #<Objects.hpp>
+Point(double x, double y) #<Objects.hpp>
+Polygon :  #<Objects.hpp>
+Polygon _type_ #<Objects.hpp>
+Polygon() #<Objects.hpp>
+Polygon(double* x, double* y, int num) #<Objects.hpp>
+Segment :  #<Objects.hpp>
+Segment _type_ #<Objects.hpp>
+Segment() #<Objects.hpp>
+Segment(Point p1, Point p2) #<Objects.hpp>
+Segment(double x1, double y1, double x2, double y2) #<Objects.hpp>
+Straight _type_ #<Objects.hpp>
+Straight() #<Objects.hpp>
+Straight(double x1, double y1, double x2, double y2) #<Objects.hpp>
+distance(Point p, Polygon poly) -> double #<Objects.hpp>
+distance(Point p, Segment l) -> double #<Objects.hpp>
+distance(Point p, Straight l) -> double #<Objects.hpp>
+distance(Point p1, Point p2) -> double #<Objects.hpp>
+distance(Polygon poly, Point p) -> double #<Objects.hpp>
+distance(Polygon poly, Segment l) -> double #<Objects.hpp>
+distance(Polygon poly, Straight l) -> double #<Objects.hpp>
+distance(Polygon poly1, Polygon poly2) -> double #<Objects.hpp>
+distance(Segment l, Point p) -> double #<Objects.hpp>
+distance(Segment l, Polygon poly) -> double #<Objects.hpp>
+distance(Segment l1, Segment l2) -> double #<Objects.hpp>
+distance(Segment l1, Straight l2) -> double #<Objects.hpp>
+distance(Straight l, Point p) -> double #<Objects.hpp>
+distance(Straight l, Polygon poly) -> double #<Objects.hpp>
+distance(Straight l1, Straight l2) -> double #<Objects.hpp>
+distance(Straight l2, Segment l1) -> double #<Objects.hpp>
+intersection(Polygon poly, Segment l) -> Segment #<Objects.hpp>
+intersection(Polygon poly, Straight l) -> Segment #<Objects.hpp>
+intersection(Segment l, Polygon poly) -> Segment #<Objects.hpp>
+intersection(Segment l1, Segment l2) -> Point #<Objects.hpp>
+intersection(Segment l1, Straight l2) -> Point #<Objects.hpp>
+intersection(Straight l, Polygon poly) -> Segment #<Objects.hpp>
+intersection(Straight l1, Straight l2) -> Point #<Objects.hpp>
+intersection(Straight l2, Segment l1) -> Point #<Objects.hpp>
+main() -> int #<main.cpp>
+	Object::move(double dx, double dy) -> virtual void #<Objects.hpp>
+	Object::rotate(double angle) -> virtual void #<Objects.hpp>
+	Point:%x : double #<Objects.hpp>
+	Point:%y : double #<Objects.hpp>
+	Point::move(double dx, double dy) -> void #<Objects.hpp>
+	Point::rotate(double angle) -> void #<Objects.hpp>
+	Point::move(double dx, double dy) -> virtual void #<Objects.hpp>
+	Point::rotate(double angle) -> virtual void #<Objects.hpp>
+	Polygon:%m : vector #<Objects.hpp>
+	Polygon::Polygon :  #<Objects.hpp>
+	Polygon::move(double dx, double dy) -> virtual void #<Objects.hpp>
+	Polygon::rotate(double angle) -> virtual void #<Objects.hpp>
+	Segment:%x1 : int #<Objects.hpp>
+	Segment:%y1 : int #<Objects.hpp>
+	Segment:%x2 : int #<Objects.hpp>
+	Segment:%y2 : int #<Objects.hpp>
+	Segment::length() -> double #<Objects.hpp>
+	Segment::move(double dx, double dy) -> void #<Objects.hpp>
+	Segment::rotate(double angle) -> void #<Objects.hpp>
+	Segment::move(double dx, double dy) -> virtual void #<Objects.hpp>
+	Segment::rotate(double angle) -> virtual void #<Objects.hpp>
+	Straight:%x1 : int #<Objects.hpp>
+	Straight:%y1 : int #<Objects.hpp>
+	Straight:%x2 : int #<Objects.hpp>
+	Straight:%y2 : int #<Objects.hpp>
+	Straight::move(double dx, double dy) -> void #<Objects.hpp>
+	Straight::rotate(double angle) -> void #<Objects.hpp>
+	Straight::move(double dx, double dy) -> virtual void #<Objects.hpp>
+	Straight::rotate(double angle) -> virtual void #<Objects.hpp>
